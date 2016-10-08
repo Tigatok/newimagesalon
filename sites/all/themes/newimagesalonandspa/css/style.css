@@ -7,7 +7,6 @@ a {
     text-decoration: none;
 }
 a:visited {
-    /*color: rgba(247, 151, 75, 0.92);*/
     color: #444;
 }
 li a.active {
@@ -26,6 +25,10 @@ a:hover{
     margin:0 auto;
 }
 
+
+/**
+  Main Menu Styling
+**/
 #main-menu {
     float:right;
     display: inline;
@@ -78,7 +81,7 @@ ul.menu li.expanded ul.menu{
     border-bottom-left-radius: 3px;
     border-bottom-right-radius:3px;
 }
-ul.menu li.expanded ul.menu li:hover, ul.menu li.expanded ul.menu li a:hover{
+#main-menu ul.menu li.expanded ul.menu li:hover, #main-menu ul.menu li.expanded ul.menu li a:hover{
     background: none;
 }
 
@@ -90,15 +93,17 @@ ul.menu li.expanded ul.menu li:hover, ul.menu li.expanded ul.menu li a:hover{
     padding: 0;
     left:0;
 }
-/*#main-menu ul.menu li.expanded ul li {*/
-    /*padding-left: 0;*/
-/*}*/
+
 #main-menu ul.menu li.expanded ul li a{
     color: #fff;
 }
 #main-menu ul.menu li.expanded ul li a:hover{
     color: grey;
 }
+
+/**
+  End main-menu styling
+**/
 
 #aveda-header {
     background: #fff;
