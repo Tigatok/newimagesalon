@@ -17,19 +17,16 @@
   </div>
 
   <div id="content">
-    <?php print render($messages); ?>
     <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
     <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+    <?php print render($messages); ?>
     <?php print render($page['content']); ?>
-    </div>
-    <div id="content-column-left">
-      <p>content column left</p>
-      <?php print render($page['content_column_left']); ?>
-    </div>
-    <div id="content-column-right">
-      <p>content column right</p>
-      <?php print render($page['content_column_right']); ?>
-    </div>
+  </div>
+  <div id="content-column-left">
+    <?php print render($page['content_column_left']); ?>
+  </div>
+  <div id="content-column-right">
+    <?php print render($page['content_column_right']); ?>
   </div>
 
 
@@ -41,7 +38,6 @@
 
   <div id="content-cta">
     <?php print render($page['content_cta']); ?>
-    <p>content cta</p>
   </div>
 
   <div id="footer">

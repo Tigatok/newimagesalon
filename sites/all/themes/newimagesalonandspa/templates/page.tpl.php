@@ -26,27 +26,12 @@
     <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 
     <?php print render($page['content']); ?>
-    <div id="content-column-left">
-      <p>content column left</p>
-      <?php print render($page['content_column_left']); ?>
-    </div>
-    <div id="content-column-right">
-      <p>content column right</p>
-      <?php print render($page['content_column_right']); ?>
-    </div>
-  </div>
-
 
   <?php if ($page['sidebar_first']): ?>
     <div id="sidebar">
       <?php print render($page['sidebar_first']); ?>
     </div>
   <?php endif; ?>
-
-  <div id="content-cta">
-    <?php print render($page['content_cta']); ?>
-    <p>content cta</p>
-  </div>
 
   <div id="footer">
     <?php if ($page['footer']): ?>

@@ -172,7 +172,60 @@ ul.menu li.expanded ul.menu{
   End Services Grid
 **/
 
+#content{
+    display: inline-flex;
+}
 
-/*#content{*/
-    /*clear:both;*/
-/*}*/
+#first-time {
+    display: none;
+}
+#content-column-left p, #content-column-right p{
+    margin-top:30px;
+    color: #5f5c59;
+    font-family: Arial, sans-serif;
+    line-height: 19px;
+    font-size: 16px;
+    text-align: justify;
+}
+/**
+  Column Left
+**/
+#content-column-left{
+    margin: 20px;
+    background: url('../images/little_rectangle.png') no-repeat;
+    float:left;
+    width:45%;
+}
+/**
+ End Column Left
+**/
+
+/**
+  Column Right
+**/
+#content-column-right{
+    margin: 20px;
+    background: url('../images/little_rectangle.png') no-repeat;
+    float:right;
+    width:45%;
+}
+
+/**
+ End Column Right
+**/
+
+#content-cta {
+    margin-top:30px;
+    display: inline-block;
+}
+.view-simple-cta-view td{
+    width: 33%;
+    text-align: center;
+}
+
+/**
+Other
+**/
+#block-search-form{
+    clear:both;
+}
