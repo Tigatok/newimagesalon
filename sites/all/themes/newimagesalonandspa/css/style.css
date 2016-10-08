@@ -1,6 +1,13 @@
 body, #header{
     background: url('../images/background_image.jpg') repeat;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    clear: both;
+    padding: 0px 10px;
+    color: rgba(247, 151, 75, 0.92);
+    font-family: 'Courgette', cursive;
+}
 a {
     color: rgba(247, 151, 75, 0.92);
     text-decoration: none;
@@ -177,7 +184,12 @@ ul.menu li.expanded ul.menu{
   End Services Grid
 **/
 
+#content{
+    padding:20px;
+}
+
 .front #content{
+    padding:0;
     display: inline-block;
 }
 

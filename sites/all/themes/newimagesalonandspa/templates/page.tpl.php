@@ -12,8 +12,8 @@
   </div>
 
   <div id="aveda-header">
-      <p>Make a reservation at <a href="tel:250-768-9554">250.768.9554</a> or schedule online. | Interested in Spa Retreat Parties? Click here.</p>
-      <img src="<?php print base_path() . path_to_theme(); ?>/images/aveda_logo.jpg"/>
+    <p>Make a reservation at <a href="tel:250-768-9554">250.768.9554</a> or schedule online. | Interested in Spa Retreat Parties? Click here.</p>
+    <img src="<?php print base_path() . path_to_theme(); ?>/images/aveda_logo.jpg"/>
   </div>
 
   <div id="content">
@@ -27,16 +27,17 @@
 
     <?php print render($page['content']); ?>
 
-  <?php if ($page['sidebar_first']): ?>
-    <div id="sidebar">
-      <?php print render($page['sidebar_first']); ?>
-    </div>
-  <?php endif; ?>
+    <?php if ($page['sidebar_first']): ?>
+      <div id="sidebar">
+        <?php print render($page['sidebar_first']); ?>
+      </div>
+    <?php endif; ?>
 
+  </div>
   <div id="footer">
     <?php if ($page['footer']): ?>
       <?php print render($page['footer']); ?>
     <?php endif; ?>
   </div>
-
 </div>
+
