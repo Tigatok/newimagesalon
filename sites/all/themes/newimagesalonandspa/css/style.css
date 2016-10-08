@@ -119,6 +119,9 @@ ul.menu li.expanded ul.menu{
     width:100%;
     float:left;
 }
+#aveda-header .contextual-links-region{
+    float:left;
+}
 #aveda-header p{
     float:left;
     padding-left: 20px;
