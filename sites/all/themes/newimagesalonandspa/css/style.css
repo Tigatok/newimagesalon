@@ -1,0 +1,104 @@
+body, #header{
+    background: url('../images/background_image.jpg') repeat;
+}
+
+a {
+    color:grey;
+    text-decoration: none;
+}
+a:visited {
+    /*color: rgba(247, 151, 75, 0.92);*/
+    color: #444;
+}
+li a.active {
+    color: rgba(247, 151, 75, 0.92);
+}
+a:active{
+    color: rgba(247, 151, 75, 0.92);
+}
+a:hover{
+    color: grey;
+}
+
+#wrapper {
+    max-width:1160px;
+    background: #fff;
+    margin:0 auto;
+}
+
+#main-menu {
+    float:right;
+    display: inline;
+}
+
+#main-menu ul li{
+    position: relative;
+    float:left;
+}
+
+#main-menu ul li:hover > a{
+    color: grey;
+}
+
+#main-menu li {
+    display: inline;
+    padding:  10px 20px;
+}
+#main-menu li:hover{
+    cursor: pointer;
+    color: grey;
+}
+
+#main-menu a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+#main-menu li:last-child{
+    margin-right:0;
+}
+
+li:hover  ul{
+    display: block;
+}
+
+#main-menu li:hover, .expanded ul{
+    background: rgba(247, 151, 75, 0.92);
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+}
+.expanded ul{
+    display:none;
+    position: absolute;
+    float:left;
+    width:100%;
+    padding: 0;
+    left:0;
+}
+li.expanded ul li {
+    padding-left: 0;
+}
+li.expanded ul li a{
+    color: #fff;
+}
+li.expanded ul li a:hover{
+    color: grey;
+}
+
+#aveda-header {
+    background: #fff;
+    width:100%;
+    float:left;
+}
+#aveda-header p{
+    float:left;
+}
+#aveda-header img{
+    float:right;
+}
+
+#content{
+    clear:both;
+}

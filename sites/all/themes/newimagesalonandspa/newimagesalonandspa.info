@@ -1,0 +1,20 @@
+name = New Image Salon and Spa
+description= A custom theme developed by Tyler Marshall
+core= 7.x
+engine= phptemplate
+
+regions[header] = Header
+regions[main_menu] = Main Menu
+regions[aveda_header] = Aveda Header
+
+regions[content] = Content
+regions[content_column_left] = Content Column Left
+regions[content_column_right] = Content Column Right
+regions[content_cta] = Content Call To Action
+
+regions[sidebar_first] = Right sidebar
+
+regions[footer] = Footer
+
+stylesheets[all][] = css/style.css
+stylesheets[print][] = css/print.css
