@@ -10,10 +10,10 @@ a:visited {
     color: #444;
 }
 li a.active {
-    color: rgba(247, 151, 75, 0.92);
+    color: rgb(247, 151, 75);
 }
 a:active{
-    color: rgba(247, 151, 75, 0.92);
+    color: rgb(247, 151, 75);
 }
 a:hover{
     color: grey;
@@ -24,7 +24,6 @@ a:hover{
     background: #fff;
     margin:0 auto;
 }
-
 
 /**
   Main Menu Styling
@@ -67,8 +66,9 @@ a:hover{
 }
 
 #main-menu ul.menu .expanded:hover{
+    z-index: 100;
     padding-bottom:0;
-    background: rgba(247, 151, 75, 0.92);
+    background: rgb(247, 151, 75);
     border-top-left-radius: 3px;
     border-top-right-radius:3px;
 }
@@ -77,7 +77,7 @@ a:hover{
     border-radius: 3px 3px 0 0;
 }
 ul.menu li.expanded ul.menu{
-    background: rgba(247, 151, 75, 0.92);
+    background: rgb(247, 151, 75);
     border-bottom-left-radius: 3px;
     border-bottom-right-radius:3px;
 }
@@ -105,6 +105,9 @@ ul.menu li.expanded ul.menu{
   End main-menu styling
 **/
 
+/**
+  Aveda Header
+**/
 #aveda-header {
     background: #fff;
     width:100%;
@@ -116,6 +119,74 @@ ul.menu li.expanded ul.menu{
 #aveda-header img{
     float:right;
 }
+
+/**
+  End Aveda Header
+**/
+
+/**
+  Services Grid
+**/
+
+#services-grid {
+    float:left;
+}
+#services-grid ul.top-row, #services-grid ul.bottom-row{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float:left;
+    max-height:289px;
+}
+
+#services-grid ul.top-row, #services-grid ul.bottom-row{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#services-grid ul.top-row li, #services-grid ul.bottom-row li {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    max-width:285px;
+    max-height:289px;
+    position: relative;
+}
+
+#services-grid span.service-description {
+    background: rgba(247, 151, 75, 0.80);
+    color: white;
+    font-family: 'Courgette', cursive;
+    font-size:1.4em;
+    text-shadow: 1px 1px 1px rgb(92, 92, 92);
+    cursor: pointer;
+    display: table;
+    height: 289px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 289px;
+    opacity: 0;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+#services-grid ul li:hover span.service-description {
+    opacity: 1;
+    height:289px;
+}
+#services-grid span.service-description span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+/**
+  End Services Grid
+**/
+
 
 #content{
     clear:both;
