@@ -239,3 +239,14 @@ Other
 #block-search-form{
     clear:both;
 }
+
+/**
+Footer
+**/
+#footer {
+    min-height: 50px;
+    vertical-align: middle;
+    width: 100%;;
+    margin: 0 auto;
+    text-align: center;
+}
