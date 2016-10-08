@@ -26,31 +26,38 @@
 
         <li>
           <img src="<?php print base_path() . path_to_theme(); ?>/images/haircolor.jpg" />
-          <a href=""><span class="service-description"><span>Learn More</span></span></a>
+          <a href="hair-color"><span class="service-description"><span>Hair Color</span></span></a>
         </li>
         <li>
           <img src="<?php print base_path() . path_to_theme(); ?>/images/haircutsandstyling.jpg" />
+          <a href="hair-color"><span class="service-description"><span>Hair Cut and Styling</span></span></a>
         </li>
         <li>
           <img src="<?php print base_path() . path_to_theme(); ?>/images/aveda_men.jpg" />
+          <a href="hair-color"><span class="service-description"><span>Hair Cut and Styling</span></span></a>
         </li>
         <li>
           <img src="<?php print base_path() . path_to_theme(); ?>/images/textureandstraightening.jpg" />
+          <a href="hair-color"><span class="service-description"><span>Hair Cut and Styling</span></span></a>
         </li>
       </ul>
 
       <ul class="bottom-row">
         <li>
           <img src="<?php print base_path() . path_to_theme(); ?>/images/hand_and_foot.jpg" />
+          <a href="hair-color"><span class="service-description"><span>Hair Cut and Styling</span></span></a>
         </li>
         <li>
           <img src="<?php print base_path() . path_to_theme(); ?>/images/facial.jpg" />
+          <a href="hair-color"><span class="service-description"><span>Hair Cut and Styling</span></span></a>
         </li>
         <li>
           <img src="<?php print base_path() . path_to_theme(); ?>/images/signature.jpg" />
+          <a href="hair-color"><span class="service-description"><span>Hair Cut and Styling</span></span></a>
         </li>
         <li>
           <img src="<?php print base_path() . path_to_theme(); ?>/images/hairspatreatments.jpg" />
+          <a href="hair-color"><span class="service-description"><span>Hair Cut and Styling</span></span></a>
         </li>
       </ul>
     </div>
