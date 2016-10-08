@@ -31,45 +31,57 @@ a:hover{
     display: inline;
 }
 
-#main-menu ul li{
+#main-menu ul.menu li{
     position: relative;
     float:left;
-}
-
-#main-menu ul li:hover > a{
-    color: grey;
-}
-
-#main-menu li {
-    display: inline;
+     display: inline;
     padding:  10px 20px;
 }
-#main-menu li:hover{
-    cursor: pointer;
-    color: grey;
-}
 
-#main-menu a{
+#main-menu ul.menu a{
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
     font-family: Arial, sans-serif;
 }
-#main-menu li:last-child{
+
+#main-menu ul.menu li:last-child{
     margin-right:0;
 }
 
-li:hover  ul{
+#main-menu ul.menu li:hover{
+    cursor: pointer;
+    color: grey;
+}
+
+#main-menu ul.menu li:hover ul{
     display: block;
 }
 
-#main-menu li:hover, .expanded ul{
-    background: rgba(247, 151, 75, 0.92);
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    border-radius:3px;
+#main-menu ul.menu li:hover > a{
+    color: grey;
 }
-.expanded ul{
+
+#main-menu ul.menu .expanded:hover{
+    padding-bottom:0;
+    background: rgba(247, 151, 75, 0.92);
+    border-top-left-radius: 3px;
+    border-top-right-radius:3px;
+}
+#main-menu ul.menu li:hover {
+    /*background: rgba(247, 151, 75, 0.92);*/
+    border-radius: 3px 3px 0 0;
+}
+ul.menu li.expanded ul.menu{
+    background: rgba(247, 151, 75, 0.92);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius:3px;
+}
+ul.menu li.expanded ul.menu li:hover, ul.menu li.expanded ul.menu li a:hover{
+    background: none;
+}
+
+#main-menu ul.menu .expanded ul{
     display:none;
     position: absolute;
     float:left;
@@ -77,13 +89,13 @@ li:hover  ul{
     padding: 0;
     left:0;
 }
-li.expanded ul li {
-    padding-left: 0;
-}
-li.expanded ul li a{
+/*#main-menu ul.menu li.expanded ul li {*/
+    /*padding-left: 0;*/
+/*}*/
+#main-menu ul.menu li.expanded ul li a{
     color: #fff;
 }
-li.expanded ul li a:hover{
+#main-menu ul.menu li.expanded ul li a:hover{
     color: grey;
 }
 
