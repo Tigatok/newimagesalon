@@ -128,66 +128,51 @@ ul.menu li.expanded ul.menu{
   Services Grid
 **/
 
-#services-grid {
-    float:left;
+.view-services-cta-view{
+    
 }
-#services-grid ul.top-row, #services-grid ul.bottom-row{
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    float:left;
+
+.view-services-cta-view .views-field-field-service-cta-image,
+.view-services-cta-view .views-field-field-service-cta-image .field-content{
     max-height:289px;
 }
 
-#services-grid ul.top-row, #services-grid ul.bottom-row{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#services-grid ul.top-row li, #services-grid ul.bottom-row li {
-    display: inline-block;
-    margin: 0;
-    text-align: center;
-    max-width:285px;
-    max-height:289px;
+.view-services-cta-view td{
     position: relative;
 }
 
-#services-grid span.service-description {
-    background: rgba(247, 151, 75, 0.80);
+.view-services-cta-view td .field-content{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.view-services-cta-view td .views-field-field-description{
+    background: rgba(0,0,0,0.5);
     color: white;
-    font-family: 'Courgette', cursive;
-    font-size:1.4em;
-    text-shadow: 1px 1px 1px rgb(92, 92, 92);
     cursor: pointer;
     display: table;
-    height: 289px;
+    height: 290px;
     left: 0;
     position: absolute;
     top: 0;
-    width: 289px;
+    width: 290px;
     opacity: 0;
     -webkit-transition: opacity 500ms;
     -moz-transition: opacity 500ms;
     -o-transition: opacity 500ms;
     transition: opacity 500ms;
 }
-
-#services-grid ul li:hover span.service-description {
+.view-services-cta-view td .views-field-field-description:hover {
     opacity: 1;
-    height:289px;
 }
-#services-grid span.service-description span {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
+
 /**
   End Services Grid
 **/
 
 
-#content{
-    clear:both;
-}
+/*#content{*/
+    /*clear:both;*/
+/*}*/

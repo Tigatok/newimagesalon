@@ -16,53 +16,12 @@
     <img src="<?php print base_path() . path_to_theme(); ?>/images/aveda_logo.jpg"/>
   </div>
 
-  <li id="content">
+  <div id="content">
     <?php print render($messages); ?>
     <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
     <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-
-    <div id="services-grid">
-      <ul class="top-row">
-
-        <li>
-          <img src="<?php print base_path() . path_to_theme(); ?>/images/haircolor.jpg" />
-          <a href="hair-color"><span class="service-description"><span>Hair Color</span></span></a>
-        </li>
-        <li>
-          <img src="<?php print base_path() . path_to_theme(); ?>/images/haircutsandstyling.jpg" />
-          <a href="hair-color"><span class="service-description"><span>Hair Cut and Styling</span></span></a>
-        </li>
-        <li>
-          <img src="<?php print base_path() . path_to_theme(); ?>/images/aveda_men.jpg" />
-          <a href="hair-color"><span class="service-description"><span>Hair Cut and Styling</span></span></a>
-        </li>
-        <li>
-          <img src="<?php print base_path() . path_to_theme(); ?>/images/textureandstraightening.jpg" />
-          <a href="hair-color"><span class="service-description"><span>Hair Cut and Styling</span></span></a>
-        </li>
-      </ul>
-
-      <ul class="bottom-row">
-        <li>
-          <img src="<?php print base_path() . path_to_theme(); ?>/images/hand_and_foot.jpg" />
-          <a href="hair-color"><span class="service-description"><span>Hair Cut and Styling</span></span></a>
-        </li>
-        <li>
-          <img src="<?php print base_path() . path_to_theme(); ?>/images/facial.jpg" />
-          <a href="hair-color"><span class="service-description"><span>Hair Cut and Styling</span></span></a>
-        </li>
-        <li>
-          <img src="<?php print base_path() . path_to_theme(); ?>/images/signature.jpg" />
-          <a href="hair-color"><span class="service-description"><span>Hair Cut and Styling</span></span></a>
-        </li>
-        <li>
-          <img src="<?php print base_path() . path_to_theme(); ?>/images/hairspatreatments.jpg" />
-          <a href="hair-color"><span class="service-description"><span>Hair Cut and Styling</span></span></a>
-        </li>
-      </ul>
-    </div>
-
     <?php print render($page['content']); ?>
+    </div>
     <div id="content-column-left">
       <p>content column left</p>
       <?php print render($page['content_column_left']); ?>
