@@ -1,9 +1,8 @@
 body, #header{
     background: url('../images/background_image.jpg') repeat;
 }
-
 a {
-    color:grey;
+    color: rgba(247, 151, 75, 0.92);
     text-decoration: none;
 }
 a:visited {
@@ -109,12 +108,18 @@ ul.menu li.expanded ul.menu{
   Aveda Header
 **/
 #aveda-header {
-    background: #fff;
+    background: url('../images/aveda_logo.jpg') right no-repeat #fff;
     width:100%;
     float:left;
 }
 #aveda-header p{
     float:left;
+    padding-left: 20px;
+    color: #5f5c59;
+    font-family: Arial, sans-serif;
+    line-height: 19px;
+    font-size: 16px;
+    text-align: justify;
 }
 #aveda-header img{
     float:right;
@@ -172,8 +177,8 @@ ul.menu li.expanded ul.menu{
   End Services Grid
 **/
 
-#content{
-    display: inline-flex;
+.front #content{
+    display: inline-block;
 }
 
 #first-time {
@@ -221,6 +226,11 @@ ul.menu li.expanded ul.menu{
 .view-simple-cta-view td{
     width: 33%;
     text-align: center;
+}
+
+.view-simple-cta-view .views-field-body {
+    width: 75%;
+    margin: 0 auto;
 }
 
 /**

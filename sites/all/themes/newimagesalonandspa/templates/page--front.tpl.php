@@ -12,8 +12,9 @@
   </div>
 
   <div id="aveda-header">
-    <p>Make a reservation at <a href="tel:250-768-9554">250.768.9554</a> or schedule online. | Interested in Spa Retreat Parties? Click here.</p>
-    <img src="<?php print base_path() . path_to_theme(); ?>/images/aveda_logo.jpg"/>
+    <?php print render($page['aveda_header']); ?>
+<!--    <p>Make a reservation at <a href="tel:250-768-9554">250.768.9554</a> or schedule online. | Interested in Spa Retreat Parties? Click here.</p>-->
+<!--    <img src="--><?php //print base_path() . path_to_theme(); ?><!--/images/aveda_logo.jpg"/>-->
   </div>
 
   <div id="content">
